@@ -16,7 +16,7 @@ app.get("/repositories", (request, response) => {
 app.post("/repositories", (request, response) => {
   const { title, url, techs, likes } = request.body
 
-  const repositorie = { id: uuid(), title: 'Desafio node js', url: 'https://github.com/Renansf8/desafio-conceitos-node', techs: 'node.js', likes: 0 };
+  const repositorie = { id: uuid(), title, url, techs, likes: 0 };
 
   repositories.push(repositorie);
 
